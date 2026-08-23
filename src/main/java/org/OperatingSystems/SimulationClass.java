@@ -3,6 +3,8 @@ package org.OperatingSystems;
 import java.util.ArrayList;
 import java.util.List;
 
+//LEGACY: unused. Console-only demo harness with hard-coded processes, kept from before the JavaFX GUI.
+//The live simulation now runs through SimulationController / ComparisonController instead.
 public class SimulationClass {
 
     public static void simulate(String algorithm) {
