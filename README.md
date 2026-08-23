@@ -4,7 +4,7 @@ A JavaFX desktop application that simulates CPU scheduling algorithms in real ti
 Processes are scheduled on a live background thread while the GUI shows the ready
 queue, the running process, a Gantt chart, and per-process metrics as they are computed.
 
-Made by **Omar Al-Shalabi, Karem Al-Halawani, Mustabir Islam**.
+Made by **Omar Al-Shalabi**.
 
 ## Algorithms
 
