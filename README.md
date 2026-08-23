@@ -21,6 +21,17 @@ Made by **Omar Al-Shalabi, Karem Al-Halawani, Mustabir Islam**.
 
 ## Running it
 
+### Download the release (Windows, no Java needed)
+
+Grab `OSProject.rar` from the [v1.0.0 release](https://github.com/qCiels/OSProject/releases/tag/v1.0.0),
+extract it, and run `OSProject/OSProject.exe`.
+
+This is a `jpackage` bundle: it ships its own Java runtime under `OSProject/runtime/`, so
+you do **not** need a JDK, Maven, or JavaFX installed. It is Windows-only — on Linux or
+macOS, build from source instead.
+
+### Build from source (any platform)
+
 Requires JDK 24+ and Maven. JavaFX is pulled in as a Maven dependency, so no separate SDK install is needed.
 
 ```bash
