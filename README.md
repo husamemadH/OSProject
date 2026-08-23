@@ -59,6 +59,7 @@ worker actually sees the write instead of caching a stale `true` forever.
 ### Class diagram
 
 ```mermaid
+%%{init: {'theme':'neutral'}}%%
 classDiagram
     direction LR
 
@@ -225,6 +226,7 @@ classDiagram
 ### Simulation flow
 
 ```mermaid
+%%{init: {'theme':'neutral'}}%%
 sequenceDiagram
     participant User
     participant HomeController
