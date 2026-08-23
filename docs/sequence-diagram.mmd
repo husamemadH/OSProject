@@ -1,0 +1,30 @@
+%%{init: {'theme':'neutral'}}%%
+sequenceDiagram
+    participant User
+    participant HomeController
+    participant ScheduleFactory
+    participant SceneManager
+    participant SimulationController
+    participant Scheduler as Scheduler thread
+
+    User->>HomeController: pick algorithm, press Start
+    HomeController->>ScheduleFactory: createScheduler("SJF")
+    ScheduleFactory-->>HomeController: ProcessSchedulerSJF
+    HomeController->>SceneManager: showSimulationPage(scheduler)
+    SceneManager->>SimulationController: setScheduler(scheduler)
+
+    User->>SimulationController: add processes, press Start
+    SimulationController->>Scheduler: startScheduler()
+    activate Scheduler
+    Note over Scheduler: runs on its own thread<br/>ticks the AtomicInteger clock each second
+
+    loop every GUI tick
+        SimulationController->>Scheduler: read clock, current process, timeline
+        Scheduler-->>SimulationController: live state
+        SimulationController->>User: repaint table + Gantt chart
+    end
+
+    User->>SimulationController: press Stop
+    SimulationController->>Scheduler: stopScheduler()
+    Note over Scheduler: volatile isRunning = false<br/>breaks the loop
+    deactivate Scheduler
