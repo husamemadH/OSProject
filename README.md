@@ -277,3 +277,7 @@ src/main/java/org/OperatingSystems/
 
 src/main/resources/               home.fxml, simulation.fxml, comparison.fxml, icon
 ```
+
+## License
+
+Released under the [MIT License](LICENSE).
