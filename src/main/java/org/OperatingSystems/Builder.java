@@ -1,4 +1,6 @@
 package org.OperatingSystems;
+//LEGACY: unused by the running application. Fluent builder for Process, only referenced by
+//the legacy SimulationClass demo. The GUI controllers construct Process objects directly.
 public class Builder {
 
     private int processId;
