@@ -104,7 +104,7 @@
          </children>
       </VBox>
       <Button fx:id="backButton" layoutX="1235.0" layoutY="41.0" mnemonicParsing="false" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #4a90e2;" text="BACK" />
-      <Label layoutX="1.0" layoutY="878.0" prefHeight="25.0" prefWidth="344.0" style="-fx-font-size: 10; -fx-text-fill: gray;" text="Made By: Omar Al-Shalabi, Karem Al-Halawani, Mustabir Islam">
+      <Label layoutX="1.0" layoutY="878.0" prefHeight="25.0" prefWidth="344.0" style="-fx-font-size: 10; -fx-text-fill: gray;" text="Made By: Omar Al-Shalabi">
          <font>
             <Font size="19.0" />
          </font>

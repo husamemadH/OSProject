@@ -52,6 +52,6 @@
       </HBox>
    </center>
    <bottom>
-      <Label style="-fx-font-size: 10; -fx-text-fill: gray;" text="Made By: Omar Al-Shalabi, Karem Al-Halawani, Mustabir Islam" BorderPane.alignment="BOTTOM_LEFT" />
+      <Label style="-fx-font-size: 10; -fx-text-fill: gray;" text="Made By: Omar Al-Shalabi" BorderPane.alignment="BOTTOM_LEFT" />
    </bottom>
 </BorderPane>

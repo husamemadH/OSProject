@@ -14,7 +14,7 @@ public class SceneManager {
         stage = primaryStage;
 
         stage.setTitle(
-                "OS Project - Omar Al-Shalabi, Karem Al-Halawani, Mustabir Islam"
+                "OS Project - Omar Al-Shalabi"
         );
 
         var iconStream = SceneManager.class.getResourceAsStream(
